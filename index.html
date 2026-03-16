@@ -192,14 +192,16 @@
             <h2 class="subscribe__title">Підписка</h2>
             <p class="subscribe__description">Бути в курсі всіх актуальних подій та останніх новин.</p>
           </div>
-          <form class="button subscribe__button">
+          <form class="button subscribe__button" onsubmit="this.reset(); return false;">
 
             <input
+              required
+              autocomplete="email"
               type="email"
               placeholder="E-mail"
               class="subscribe__link"
             >
-            <button class="subscribe__send">
+            <button  class="subscribe__send">
               <div class="subscribe__letter">
                 >
               </div>
